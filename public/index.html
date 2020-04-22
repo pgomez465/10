@@ -9,11 +9,29 @@
  
  
     <meta charset="UTF-8">
-    <title>Sample FirebaseUI App</title>
-    <!-- *******************************************************************************************
-       * TODO(DEVELOPER): Paste the initialization snippet from:
-       * Firebase Console > Overview > Add Firebase to your web app. *
-       ***************************************************************************************** -->
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAAcogDYF_cOCzQZ-hdb-ZC0sGO8gNBivc",
+    authDomain: "imlachchat-7796a.firebaseapp.com",
+    databaseURL: "https://imlachchat-7796a.firebaseio.com",
+    projectId: "imlachchat-7796a",
+    storageBucket: "imlachchat-7796a.appspot.com",
+    messagingSenderId: "627615278379",
+    appId: "1:627615278379:web:b1c67ad84d7190a90d516e",
+    measurementId: "G-T5V48D58S3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
     <script src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css" />
     <script type="text/javascript">
@@ -80,29 +98,7 @@
         </div>
     </div>
 
- <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyAAcogDYF_cOCzQZ-hdb-ZC0sGO8gNBivc",
-    authDomain: "imlachchat-7796a.firebaseapp.com",
-    databaseURL: "https://imlachchat-7796a.firebaseio.com",
-    projectId: "imlachchat-7796a",
-    storageBucket: "imlachchat-7796a.appspot.com",
-    messagingSenderId: "627615278379",
-    appId: "1:627615278379:web:b1c67ad84d7190a90d516e",
-    measurementId: "G-T5V48D58S3"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
  
     <script src="/socket.io/socket.io.js"></script>
     <script src="bundle.js"></script>
